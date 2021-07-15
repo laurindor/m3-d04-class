@@ -28,7 +28,7 @@ useEffect( ()=>{
 {/**
   useEffect(()=>getColor()) -> will run after every render, in a continuos cycle. This corresponds to the componentDidUpdate lifecycle
   useEffect(()=>getColor(), []) -> will render ONLY after the first blank render, this corresponds to the componentDidMount lifecycle
-  useEffect(()=>getColor(), [color]) -> will wait for the state to change before running. This is special and runs only on a change of state
+  useEffect(()=>getColor(), [action]) -> will wait for the state to change before running. This is special and runs only on a change of state
   
   useEffect(()=>{return console.log('runs on unmount')}) -> will run once the component is done, also called clean-up. This corresonds to a componentWillUnmount
 */}
